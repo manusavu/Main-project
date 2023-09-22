@@ -2,30 +2,29 @@
 <html>
     <head>
         <meta charset = "utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LOGIN PAGE</title>
         <link rel = "stylesheet" href = "styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
         <center><h1>LOGIN PAGE</h1></center>
         <div class = "login_box">
-            
-            <div id="box">
-                <img src = "mvgr.jpg" width= "300" height = "150">
-                <marquee width="100%" id = "res" >Results are out, Please Login to check you results</marquee>
-                <div class = "username">
-                <label id = "uname">USERNAME:<input type = "text" name = "username" placeholder="username" required maxlength="10"/></label>
-                <br/>
-                <button id = "next">NEXT</button>
+            <img src = "mvgr.jpg" width= "300" height = "150">
+            <marquee width="100%" id = "res" >Results are out, Please Login to check you results</marquee>
+                <div class = "visible">
+                    <div class = "container" id = "username">
+                        <label id = "uname">USERNAME:  <input type = "text" name = "username" placeholder="  username" required maxlength="10"/></label>
+                        <button id = "next">NEXT</button>
+                    </div>
+                    <div class = "container" id = "password">
+                        <label id = "pword">PASSWORD: <input type = "password" name = "password" required minlength="6"/></label>
+                        <button>SUBMIT</button>
+                    </div>
                 </div>
-                <br/>
-                <!-- <div class = "password"></div>
-                <label class = "password" >PASSWORD:<input type = "password" name = "password" placeholder="password" required minlength="6"/></label>
-                </div> -->
-                <br/>
-                <!-- <button id = "submit">SUBMIT</button>
-                <button id = "cancel">CANCEL</button> -->
-                
-            </div>
         </div>
+        <script src ="index.js"></script>
     </body>
 </html>
