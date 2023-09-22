@@ -1,9 +1,9 @@
 h1{
-    background-color: lightgreen;
+    background-color: rgb(81, 199, 81);
 }
 body{
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 .login_box{
     width:600px;
@@ -16,20 +16,25 @@ body{
 button{
     margin-top: 5%;
     cursor:pointer;
-    background-color:black;
+    background-color:lightslategray;
     color:white;
     border-radius: 9px;
     width:60px;
+    margin-left:50%;
+    margin-top: 5%;
 }
-.username{
+
+.visible{
+    color:rgb(0, 0, 0);
     margin-top: 15%;
-    border :3px solid black;
+    border :3px solid yellowgreen;
     width:400px;
     height : 100px;
     margin-top: 75px;
     margin-left: 17%;
     border-radius: 10px;
     padding-top: 5%;
+
 }
 input[type="text"],input[type="password"]{
     border-radius: 8px;
@@ -40,4 +45,7 @@ marquee{
 }
 #uname{
     margin-left: 10px;
+}
+#password{
+    display: none;
 }
